@@ -1,0 +1,78 @@
+body {
+  background-color: #f2e6ff;
+}
+
+.top-right {
+  position: absolute;
+  top: 7%;
+  left: 15%;
+}
+
+.pageTitle {
+/*  color: #b87333;*/
+  color: orange;
+  font-size: 150px;
+  font-style: italic;
+  font-family: 'Arizonia', Helvetica, sans-serif;
+  transform: rotate(-22deg);
+}
+
+.countdown {
+  display: inline;
+}
+
+.countdown-container {
+  border-radius: 25px;
+  background: rgba(242, 242, 242, 0.7);
+  padding: 3px;
+  width: 180px;
+  height: 180px;
+
+}
+
+.day {
+  position: absolute;
+  bottom: 18%;
+  left: 9%;
+}
+
+.hour {
+  position: absolute;
+  bottom: 18%;
+  left: 30%;
+}
+
+.minute {
+  position: absolute;
+  bottom: 18%;
+  right: 30%;
+}
+
+.second {
+  position: absolute;
+  bottom: 18%;
+  right: 9%;
+}
+
+.cdNumber {
+  font-size: 75px;
+  font-family: 'Arizonia', Hevetica, sans-serif;
+}
+
+.cdUnit {
+  font-size: 40px;
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
+.center {
+  left: 43%;
+}
+
+.ourStory {
+  font-size: 65px;
+  left: 50%;
+}
+
+.picsHeader {
+  font-size: 40px;
+}
