@@ -391,6 +391,15 @@ h1, h2, h3, h4, h5, h6, figure {
 
 
 
+
+
+
+
+
+/*
+***************************************************************************************
+***************************************************************************************
+*/
 #my-header .display-tc, #fh5co-counter .display-tc .my-cover .display-tc {
   display: table-cell !important;
   vertical-align: middle;
@@ -448,6 +457,17 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
+/*
+*********************************************************************************************************+*
+***********************************************************************************************************
+*/
+
+
+
+
+
+
+
 
 .my-cover {
   height: 900px;
@@ -485,17 +505,184 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-/*
+.my-heading {
+  margin-bottom: 5em;
+}
 
+.my-heading h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #F14E95;
+  font-family: "Sacramento", Arial, serif;
+}
+@media screen and (max-width: 768px) {
+  .my-heading h2 {
+    font-size: 40px;
+  }
+}
+.my-heading p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #828282;
+}
+.my-heading span {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+/*
+******************************************************************************************
+******************************************************************************************
+*/
+#fh5co-testimonial, #fh5co-services, #fh5co-started, #fh5co-footer, #fh5co-event, #fh5co-couple-story, #my-couple, #fh5co-gallery, .fh5co-section {
+  padding: 7em 0;
+  clear: both;
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-testimonial, #fh5co-services, #fh5co-started, #fh5co-footer, #fh5co-event, #fh5co-couple-story, #my-couple, #fh5co-gallery, .fh5co-section {
+    padding: 3em 0;
+  }
+}
+/*
+*******************************************************************************************
+*******************************************************************************************
 */
 
 
 
 
+.couple-wrap {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .couple-wrap {
+    width: 100%;
+  }
+}
 
+.couple-half {
+  width: 50%;
+  float: left;
+}
 
+@media screen and (max-width: 768px) {
+  .couple-half {
+    width: 100%;
+  }
+}
 
+.couple-half h3 {
+  font-family: "Sacramento", Arial, serif;
+  color: #F14E95;
+  font-size: 30px;
+}
+.couple-half .groom, .couple-half .bride {
+  float: left;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.couple-half .groom img, .couple-half .bride img {
+  width: 150px;
+  height: 150px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+@media screen and (max-width: 480px) {
+  .couple-half .groom, .couple-half .bride {
+    width: 100%;
+    height: 140px;
+  }
+  .couple-half .groom img, .couple-half .bride img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+}
+.couple-half .groom {
+  float: right;
+  margin-right: 5px;
+}
+.couple-half .bride {
+  float: left;
+  margin-left: 5px;
+}
+.couple-half .desc-groom {
+  padding-right: 180px;
+  text-align: right;
+}
+.couple-half .desc-bride {
+  padding-left: 180px;
+  text-align: left;
+}
+@media screen and (max-width: 480px) {
+  .couple-half .groom, .couple-half .bride {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .couple-half .desc-groom {
+    padding-right: 0;
+    text-align: center;
+  }
+  .couple-half .desc-bride {
+    padding-left: 0;
+    text-align: center;
+  }
+}
 
+.heart {
+  position: absolute;
+  top: 4em;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  animation: pulse 1s ease infinite;
+}
+
+.heart i {
+  font-size: 20px;
+  background: #fff;
+  padding: 20px;
+  color: #F14E95;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .heart {
+    display: none;
+  }
+}
+
+.separator {
+  box-sizing: content-box;
+  height: 10px;
+  background-color: purple;
+  width: 90%;
+  border-radius: 15px;
+}
 
 
 
@@ -667,6 +854,22 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
+.my-heading.fh5co-heading-sm {
+  margin-bottom: 2em;
+}
+
+#fh5co-counter .my-heading h2, #fh5co-event .my-heading h2 {
+  color: #fff;
+}
+
+#fh5co-counter .my-heading span, #fh5co-event .my-heading span {
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
 */
 
 
@@ -794,18 +997,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table;
   width: 100%;
 }
-#fh5co-counter .fh5co-heading h2,
-#fh5co-event .fh5co-heading h2 {
-  color: #fff;
-}
-#fh5co-counter .fh5co-heading span,
-#fh5co-event .fh5co-heading span {
-  color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 600;
-}
+
 #fh5co-counter .overlay,
 #fh5co-event .overlay {
   position: absolute;
@@ -1293,143 +1485,15 @@ form label {
 
 
 
-#fh5co-testimonial,
-#fh5co-services,
-#fh5co-started,
-#fh5co-footer,
-#fh5co-event,
-#fh5co-couple-story,
-#fh5co-couple,
-#fh5co-gallery,
-.fh5co-section {
-  padding: 7em 0;
-  clear: both;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-testimonial,
-  #fh5co-services,
-  #fh5co-started,
-  #fh5co-footer,
-  #fh5co-event,
-  #fh5co-couple-story,
-  #fh5co-couple,
-  #fh5co-gallery,
-  .fh5co-section {
-    padding: 3em 0;
-  }
-}
 
 .fh5co-section-gray {
   background: rgba(0, 0, 0, 0.04);
 }
 
-.couple-wrap {
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  .couple-wrap {
-    width: 100%;
-  }
-}
 
-.heart {
-  position: absolute;
-  top: 4em;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  animation: pulse 1s ease infinite;
-}
-.heart i {
-  font-size: 20px;
-  background: #fff;
-  padding: 20px;
-  color: #F14E95;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-@media screen and (max-width: 768px) {
-  .heart {
-    display: none;
-  }
-}
 
-.couple-half {
-  width: 50%;
-  float: left;
-}
-@media screen and (max-width: 768px) {
-  .couple-half {
-    width: 100%;
-  }
-}
-.couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
-  font-size: 30px;
-}
-.couple-half .groom, .couple-half .bride {
-  float: left;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-}
-.couple-half .groom img, .couple-half .bride img {
-  width: 150px;
-  height: 150px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-@media screen and (max-width: 480px) {
-  .couple-half .groom, .couple-half .bride {
-    width: 100%;
-    height: 140px;
-  }
-  .couple-half .groom img, .couple-half .bride img {
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-  }
-}
-.couple-half .groom {
-  float: right;
-  margin-right: 5px;
-}
-.couple-half .bride {
-  float: left;
-  margin-left: 5px;
-}
-.couple-half .desc-groom {
-  padding-right: 180px;
-  text-align: right;
-}
-.couple-half .desc-bride {
-  padding-left: 180px;
-  text-align: left;
-}
-@media screen and (max-width: 480px) {
-  .couple-half .groom, .couple-half .bride {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .couple-half .desc-groom {
-    padding-right: 0;
-    text-align: center;
-  }
-  .couple-half .desc-bride {
-    padding-left: 0;
-    text-align: center;
-  }
-}
+
+
 
 .feature-center {
   text-align: center;
@@ -1473,37 +1537,7 @@ form label {
   color: #5d5d5d;
 }
 
-.fh5co-heading {
-  margin-bottom: 5em;
-}
-.fh5co-heading.fh5co-heading-sm {
-  margin-bottom: 2em;
-}
-.fh5co-heading h2 {
-  font-size: 60px;
-  margin-bottom: 10px;
-  line-height: 1.5;
-  font-weight: bold;
-  color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-heading h2 {
-    font-size: 40px;
-  }
-}
-.fh5co-heading p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #828282;
-}
-.fh5co-heading span {
-  text-transform: uppercase;
-  font-size: 13px;
-  letter-spacing: 2px;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.4);
-}
+
 
 #fh5co-testimonial .wrap-testimony {
   position: relative;
