@@ -14,6 +14,7 @@
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
+    <!-- Need to Check these useable -->
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -66,26 +67,76 @@
         </div>
       </nav>
 
-      <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
 
+      <header id="my-header" class="my-cover" role="banner" style="background-image:url(images/img_bg_2.jpg);" data-stellar-background-ratio="0.5">
+<!--  <header id="my-header" class="my-cover" role="banner" style="background-image:url(img/Bench Image);" data-stellar-background-ratio="0.5"> -->
         <div class="overlay"></div>
 
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center">
+
               <div class="display-t">
                 <div class="display-tc animate-box" data-animate-effect="fadeIn">
                   <h1>Joefrey &amp; Sheila</h1>
                   <h2>We Are Getting Married</h2>
-                  <div class="simply-countdown simply-countdown-one"></div>
-                  <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p>
+
+                  <div class="simply-countdown simply-countdown-one">
+                    <div class="simply-section simply-days-section">
+                      <div>
+                        <span id="day" class="simply-amount"></span>
+                        <span class="simply-word">Days</span>
+                      </div>
+                    </div>
+                    <div class="simply-section simply-hours-section">
+                      <div>
+                        <span id="hour" class="simply-amount"></span>
+                        <span class="simply-word">Hours</span>
+                      </div>
+                    </div>
+                    <div class="simply-section simply-minutes-section">
+                      <div>
+                        <span id="minute" class="simply-amount"></span>
+                        <span class="simply-word">Minutes</span>
+                      </div>
+                    </div>
+                    <div class="simply-section simply-seconds-section">
+                      <div>
+                        <span id="second" class="simply-amount"></span>
+                        <span class="simply-word">Seconds</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p><a href="#" class="btn btn-default btn-sm">What Ever else we want to say</a></p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
 
       </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	<div id="fh5co-couple">
 		<div class="container">
@@ -519,6 +570,7 @@
 		</div>
 	</div>
 
+<!--
 	<footer id="fh5co-footer" role="contentinfo">
 		<div class="container">
 
@@ -541,6 +593,7 @@
 
 		</div>
 	</footer>
+-->
 	</div>
 
 	<div class="gototop js-top">
@@ -567,28 +620,9 @@
 	<script src="js/magnific-popup-options.js"></script>
 
 	<!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js"></script> -->
-	<script src="js/simplyCountdown.js"></script>
+	<script src="js/countdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
-	<script>
-    var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-
-    // default example
-    simplyCountdown('.simply-countdown-one', {
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate()
-    });
-
-    //jQuery example
-    $('#simply-countdown-losange').simplyCountdown({
-        year: d.getFullYear(),
-        month: d.getMonth() + 1,
-        day: d.getDate(),
-        enableUtc: false
-    });
-</script>
 
 	</body>
 </html>
