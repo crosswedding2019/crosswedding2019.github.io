@@ -387,19 +387,6 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 12px;
 }
 
-
-
-
-
-
-
-
-
-
-/*
-***************************************************************************************
-***************************************************************************************
-*/
 #my-header .display-tc, #my-counter .display-tc .my-cover .display-tc {
   display: table-cell !important;
   vertical-align: middle;
@@ -457,17 +444,6 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
-/*
-*********************************************************************************************************+*
-***********************************************************************************************************
-*/
-
-
-
-
-
-
-
 
 .my-cover {
   height: 900px;
@@ -535,17 +511,6 @@ h1, h2, h3, h4, h5, h6, figure {
   color: rgba(0, 0, 0, 0.4);
 }
 
-
-
-
-
-
-
-
-/*
-******************************************************************************************
-******************************************************************************************
-*/
 #my-testimonial, #my-services, #my-started, #my-footer, #my-event, #my-couple-story, #my-couple, #my-gallery, .my-section {
   padding: 7em 0;
   clear: both;
@@ -556,19 +521,13 @@ h1, h2, h3, h4, h5, h6, figure {
     padding: 3em 0;
   }
 }
-/*
-*******************************************************************************************
-*******************************************************************************************
-*/
-
-
-
 
 .couple-wrap {
   width: 90%;
   margin: 0 auto;
   position: relative;
 }
+
 @media screen and (max-width: 768px) {
   .couple-wrap {
     width: 100%;
@@ -591,6 +550,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #F14E95;
   font-size: 30px;
 }
+
 .couple-half .groom, .couple-half .bride {
   float: left;
   -webkit-border-radius: 50%;
@@ -600,6 +560,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 150px;
   height: 150px;
 }
+
 .couple-half .groom img, .couple-half .bride img {
   width: 150px;
   height: 150px;
@@ -608,6 +569,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -ms-border-radius: 50%;
   border-radius: 50%;
 }
+
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
     width: 100%;
@@ -619,22 +581,27 @@ h1, h2, h3, h4, h5, h6, figure {
     margin: 0 auto;
   }
 }
+
 .couple-half .groom {
   float: right;
   margin-right: 5px;
 }
+
 .couple-half .bride {
   float: left;
   margin-left: 5px;
 }
+
 .couple-half .desc-groom {
   padding-right: 180px;
   text-align: right;
 }
+
 .couple-half .desc-bride {
   padding-left: 180px;
   text-align: left;
 }
+
 @media screen and (max-width: 480px) {
   .couple-half .groom, .couple-half .bride {
     margin-left: 0;
@@ -875,15 +842,15 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-#my-testimonial .wrap-testimony {
+.my-testimonial .wrap-testimony, .my-testimonial-2 .wrap-testimony {
   position: relative;
 }
 
-#my-testimonial .wrap-testimony .testimony-slide {
+.my-testimonial .wrap-testimony .testimony-slide, .my-testimonial-2 .wrap-testimony .testimony-slide {
   text-align: center;
 }
 
-#my-testimonial .wrap-testimony .testimony-slide span {
+.my-testimonial .wrap-testimony .testimony-slide span, .my-testimonial-2 .wrap-testimony .testimony-slide span {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -891,12 +858,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: block;
 }
 
-#my-testimonial .wrap-testimony .testimony-slide span a.twitter {
-  color: #F14E95;
-  font-weight: 300;
-}
-
-#my-testimonial .wrap-testimony .testimony-slide figure {
+.my-testimonial .wrap-testimony .testimony-slide figure, .my-testimonial-2 .wrap-testimony .testimony-slide figure {
   margin-bottom: 10px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -906,7 +868,7 @@ h1, h2, h3, h4, h5, h6, figure {
   height: 100px;
 }
 
-#my-testimonial .wrap-testimony .testimony-slide figure img {
+.my-testimonial .wrap-testimony .testimony-slide figure img, .my-testimonial-2 .wrap-testimony .testimony-slide figure img {
   width: 150px;
   height: 150px;
   -webkit-border-radius: 50%;
@@ -915,7 +877,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 
-#my-testimonial .wrap-testimony .testimony-slide blockquote {
+.my-testimonial .wrap-testimony .testimony-slide blockquote, .my-testimonial-2 .wrap-testimony .testimony-slide blockquote {
   border: none;
   margin: 30px auto;
   width: 50%;
@@ -927,36 +889,49 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media screen and (max-width: 992px) {
-  #my-testimonial .wrap-testimony .testimony-slide blockquote {
+  .my-testimonial .wrap-testimony .testimony-slide blockquote, .my-testimonial-2 .wrap-testimony .testimony-slide blockquote {
     width: 100%;
   }
 }
 
-#my-testimonial .wrap-testimony .testimony-slide blockquote p {
+.my-testimonial .wrap-testimony .testimony-slide blockquote p, .my-testimonial-2 .wrap-testimony .testimony-slide blockquote p {
   font-style: italic;
   color: #8f989f;
   font-size: 20px;
   line-height: 1.6em;
 }
 
-#my-testimonial .wrap-testimony .testimony-slide.active {
+.my-testimonial .wrap-testimony .testimony-slide.active, .my-testimonial-2 .wrap-testimony .testimony-slide.active {
   display: block;
 }
 
-#my-testimonial .wrap-testimony .arrow-thumb {
+.my-testimonial .wrap-testimony .arrow-thumb, .my-testimonial-2 .wrap-testimony .arrow-thumb {
   position: absolute;
   top: 40%;
   display: block;
   width: 100%;
 }
 
-#my-testimonial .wrap-testimony .arrow-thumb a {
+.my-testimonial .wrap-testimony .arrow-thumb a, .my-testimonial-2 .wrap-testimony .arrow-thumb a {
   font-size: 32px;
   color: #dadada;
 }
 
-#my-testimonial .wrap-testimony .arrow-thumb a:hover, #my-testimonial .wrap-testimony .arrow-thumb a:focus, #my-testimonial .wrap-testimony .arrow-thumb a:active {
+#.my-testimonial .wrap-testimony .arrow-thumb a:hover, .my-testimonial .wrap-testimony .arrow-thumb a:focus, .my-testimonial .wrap-testimony .arrow-thumb a:active {
   text-decoration: none;
+}
+
+#.my-testimonial-2 .wrap-testimony .arrow-thumb a:hover, .my-testimonial-2 .wrap-testimony .arrow-thumb a:focus, .my-testimonial-2 .wrap-testimony .arrow-thumb a:active {
+  text-decoration: none;
+}
+
+.image-center-main {
+  width: 350px;
+  height: 350px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
 }
 
 
@@ -1140,6 +1115,10 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 600;
 }
 
+.my-testimonial .wrap-testimony .testimony-slide span a.twitter {
+  color: #F14E95;
+  font-weight: 300;
+}
 */
 
 
