@@ -945,6 +945,16 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: rotate(90deg);
 }
 
+/*
+.rotateN90 {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+*/
+
 .carousel-inner > .item {
   height: 930px;
 }
@@ -952,6 +962,22 @@ h1, h2, h3, h4, h5, h6, figure {
 .carousel {
   margin: auto;
 }
+
+.images {
+  line-height: 0;
+  -webkit-column-count: 4;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 4;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+}
+
+.images img {
+  width: 100% !important;
+  height: auto !important;
+}
+
 
 
 /*
